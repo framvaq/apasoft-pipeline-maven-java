@@ -2,11 +2,6 @@ pipeline {
     agent any
 
     stages {
-        stage('Checkout') {
-            steps {
-                git branch: 'main', url: 'https://github.com/framvaq/apasoft-pipeline-maven-java.git'
-            }
-        }
         stage('Build') {
             steps {
                 echo 'Building...'
